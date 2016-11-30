@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Traffic layer</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+      <option value="37.787085, -122.387695">Bryant-Embarcadero</option>
+      <option value="37.789612, -122.388376">Harrison-Embarcadero</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="37.787085, -122.387695">Bryant-Embarcadero</option>
+      <option value="37.789612, -122.388376">Harrison-Embarcadero</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    <script src="app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2PGFsidXb2pjgdasmD6y1HGeVrFKIwKk&callback=initMap">
+    </script>
+  </body>
+</html>
